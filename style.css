@@ -1,0 +1,149 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*  VARIABLES */
+:root {
+    --WHITE: #ffffff;
+    --ORANGE: hsl(31, 77%, 52%);
+    --CYAN: hsl(184, 100%, 22%);
+    --DARK-CYAN: hsl(179, 100%, 13%);
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+.box {
+    width: 200px;
+    height: auto;
+  }
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--WHITE);
+    font-size: 2rem;
+    opacity: 0.9;
+    margin: 35px 0px 20px 0px;
+  }
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    opacity: 0.7;
+    font-weight: 300;
+    font-size: 0.7rem;
+    color: var(--WHITE);
+    word-spacing: 3px;
+}
+
+.one {
+    background-color: var(--ORANGE);
+    padding: 40px;
+  }
+
+.two {
+    background-color: var(--CYAN);
+    padding: 40px 40px 30px 40px;
+  }
+
+.three {
+    background-color: var(--DARK-CYAN);
+    padding: 40px 40px 10px 40px;
+  }
+
+ .learn {
+    margin-top: 65px;
+    width: 7rem;
+    height: 1.8rem;
+    background-color: var(--WHITE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+ }
+
+ a {
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+    font-size: 0.8rem;
+ }
+
+ .link-one {
+    color: var(--ORANGE);
+ }
+
+ .link-two {
+    color: var(--CYAN);
+ }
+
+ .link-three {
+    color: var(--DARK-CYAN);
+ }
+
+ @media (min-width: 380px) {
+  .one {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .three {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+ }
+
+@media (max-width: 380px) {
+body {
+  height: 100%;
+}
+
+.container {
+  margin-block: 20px;
+  display: grid;
+}
+
+.box{
+  width: 230px;
+}
+
+.one {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.three {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+h1 {
+  margin: 15px 0px 20px 0px;
+}
+
+.learn{
+ margin-top: 20px;
+}
+
+.bot {
+  margin-bottom: 20px;
+}
+
+}
